@@ -53,54 +53,6 @@ header {
   justify-content: center;
 }
 
-.tarjetas {
-  display: flex;
-  justify-content: space-around;
-}
-
-.tarjetapoke {
-  text-align: center;
-  width: 200px;
-  border: solid 2px black;
-  border-style: solid;
-  border-radius: 5px;
-}
-
-.tarjetapokefuego {
-  text-align: center;
-  background-color: lightcoral;
-  width: 200px;
-  border: solid 2px black;
-  border-style: solid;
-  border-radius: 5px;
-}
-
-.tarjetapokeplanta {
-  text-align: center;
-  background-color: lightgreen;
-  width: 200px;
-  border: solid 2px black;
-  border-style: solid;
-  border-radius: 5px;
-}
-
-.tarjetapokeagua {
-  text-align: center;
-  background-color: lightblue;
-  width: 200px;
-  border: solid 2px black;
-  border-style: solid;
-  border-radius: 5px;
-}
-
-.tarjetapokeelec {
-  text-align: center;
-  background-color: rgb(255, 211, 15);
-  width: 200px;
-  border: solid 2px black;
-  border-style: solid;
-  border-radius: 5px;
-}
 
 input[type=text], select {
   width: 100%;
@@ -151,45 +103,8 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
-.botonbola img {
-  height: 30px;
-  margin-right: 5px;
-}
 
-.tarjeta1 {
-  background-color: lightgreen;
-  border: solid;
-  text-align: center;
-}
 
-.tarjeta2 {
-  background-color: coral;
-  border: solid;
-  text-align: center;
-}
-
-.tarjeta3 {
-  background-color: lightblue;
-  border: solid;
-  text-align: center;
-}
-
-.tarjeta4 {
-  background-color: rgb(255, 208, 0);
-  border: solid;
-  text-align: center;
-}
-
-button[type=submit] {
-  width: 100%;
-  background-color: #f11717;
-  border-color: #ff0000;
-  color: white;
-}
-
-button[type=submit]:hover {
-  background-color: black;
-}
 
 * {
   box-sizing: border-box;
@@ -527,10 +442,6 @@ body {
   background-color: #ffffff;
 }
 
-body {
-  background: #eee;
-  font-family: "Lily Script One";
-}
 
 .card {
   position: absolute;
