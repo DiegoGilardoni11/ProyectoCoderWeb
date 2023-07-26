@@ -1,130 +1,150 @@
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipo de Pokemones - Pokémon Master ARG</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <link rel="shortcut icon" href="../multimedia/IMG/Pokemon-PNG-HD.png">
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="utf-8">
+  <title>Inicio - Pokémon Master ARG</title>
+ <link rel="shortcut icon" href="../Multimedia/IMG/Pokemon-PNG-HD.png">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+ <link rel="stylesheet" href="../css/styles.css">
 </head>
     <body>
         <header>
-            <div class="Portada">
-
-            </div>
-
-            <nav class="navbar navbar-expand-lg bar">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../pages/index.html">
-                        <img src="../multimedia/IMG/Pokebola inico.png" alt="No se encuentra" width="30" height="24">
-                        Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../multimedia/IMG/Pokebola inico.png" alt="No se encuentra" width="30" height="24">
-                        General
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../pages/tipo_pokemones.html">Tipo de Pokémones</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Proxima Seccion</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../pages/unite.html">
-                      <img src="../multimedia/IMG/Pokebola inico.png" alt="No se encuentra" width="30" height="24">
-                      Unite
-                      </a>
-                    </li>
-                  </ul>
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
-                </div>
+            <nav>
+              <div class="logo">
+                <img src="../multimedia/IMG/Pokemon Master.png" alt="Logo Image">
               </div>
-            </nav>
+              <div class="hamburger">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+              </div>
+              <ul class="nav-links">
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="../pages/tipo_pokemones.html">Tipo de Pokémones</a></li>
+                  <li><a href="../pages/unite.html">Unirse</a></li>
+                  <li><button class="login-button" href="#">Login</button></li>
+              </ul>
+          </nav>
         </header>
+        <div class="espaciogrande"></div>
         <div class="margizq">
             <h1>Tipos de Pokémones</h1>   
             <p>A cotinuacion se detallaran los cuatro tipos de pokemones basicos y modelos de ejemplo:</p>
         </div>
           <hr/>
-        <main class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 justify-content-center">
-            <div class="col">
-              <div class="card">
-                <div class="tarjeta1">
-                  <h5 class="card-title">Tipo Planta</h5>
-                  <hr/>
-                  <p>Bullbasaur es el primer ejemplo de un pokemon del tipo Planta.</p>
-                  <img src="../multimedia/IMG/bulbasaur.png" class="card-img-top" alt="...">
-                  <img src="../multimedia/IMG/bulbasaur-razorleaf.gif" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Para mas informacion acerca de pokemones tipo planta, consultar el sitio:
-                    <a href="https://www.wikidex.net/wiki/Tipo_planta">Wikidex - Tipo Planta</a></p>
-                  </div>
-                </div>  
+          <section class="card-container">
+  
+  
+  
+            <article class="c-card">
+              <h1 class="c-card__title">
+                Planta
+              </h1>
+              
+              <header class="c-card__header1">
+                <img src="../multimedia/IMG/001.png"  class="c-card__image" alt="Card Image" />
+              </header>
+          
+              <div class="c-card__body">
+                <h2 class="c-card__subtitle">
+                  Bulbasaur
+                </h2>
+                
+                <p class="c-card__intro">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </p>
+                
               </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="tarjeta2">
-                  <h5 class="card-title">Fuego</h5>
-                  <hr/>
-                  <p>Charmander es el primer ejemplo de un pokemon del tipo Fuego.</p>
-                  <img src="../multimedia/IMG/charmander.png" class="card-img-top" alt="...">
-                  <img src="../multimedia/IMG/REL3.gif" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Para mas informacion acerca de pokemones tipo fuego, consultar el sitio: 
-                    <a href="https://www.wikidex.net/wiki/Tipo_fuego">Wikidex - Tipo Fuego</a></p>
-                  </div>
-                </div>  
+          
+              <footer class="c-card__footer">
+                Footer
+              </footer>
+          
+            </article>
+            
+            
+            
+            <article class="c-card c-card--center">
+              <h1 class="c-card__title">
+                Fuego
+              </h1>
+              
+              <header class="c-card__header2">
+                <img src="../multimedia/IMG/002.png"  class="c-card__image" alt="Card Image"  />
+              </header>
+          
+              <div class="c-card__body">
+                <h2 class="c-card__subtitle">
+                  Fuego
+                </h2>
+                
+                <p class="c-card__intro">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </p>
               </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="tarjeta3">
-                  <h5 class="card-title">Agua</h5>
-                  <hr/>
-                  <p>Squirtle es el primer ejemplo de un pokemon del tipo Acuatico.</p>
-                  <img src="../multimedia/IMG/squirtle.png" class="card-img-top" alt="...">
-                  <img src="../multimedia/IMG/pokemon-squirtle.gif" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Para mas informacion acerca de pokemones tipo agua, consultar el sitio:
-                    <a href="https://www.wikidex.net/wiki/Tipo_agua">Wikidex - Tipo Agua</a> </p>
-                  </div>  
-                </div>
+          
+              <footer class="c-card__footer">
+                Footer
+              </footer>
+          
+            </article>
+
+            <article class="c-card c-card--center">
+              <h1 class="c-card__title">
+                Agua
+              </h1>
+              <header class="c-card__header3">
+                <img src="../multimedia/IMG/003.png"  class="c-card__image" alt="Card Image" />
+              </header>
+          
+              <div class="c-card__body">
+
+                <h2 class="c-card__subtitle">
+                  Squirtle
+                </h2>
+                
+                <p class="c-card__intro">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </p>
               </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                  <div class="tarjeta4">
-                    <h5 class="card-title">Eléctrico</h5>
-                    <hr/>
-                    <p>Pikachu es el primer ejemplo de un pokemon del tipo Electrico.</p>
-                    <img src="../multimedia/IMG/pikachu.png" class="card-img-top" alt="...">
-                    <img src="../multimedia/IMG/pikachu-pokemon.gif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Para mas informacion acerca de pokemones tipo electrico, consultar el sitio:
-                      <a href="https://www.wikidex.net/wiki/Tipo_eléctrico">Wikidex - Tipo Electrico</a></p>
-                    </div>
-                  </div>
+          
+              <footer class="c-card__footer">
+                Footer
+              </footer>
+          
+            </article>
+
+            <article class="c-card c-card--center">
+              <h1 class="c-card__title">
+                Eléctrico
+              </h1>
+              
+              <header class="c-card__header4">
+                <img src="../multimedia/IMG/004.png"  class="c-card__image" alt="Card Image" />
+              </header>
+          
+              <div class="c-card__body">
+                <h2 class="c-card__title">
+                  Pikachu
+                </h2>
+
+                
+                <p class="c-card__intro">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </p>
               </div>
-            </div>
-          </div>
+          
+              <footer class="c-card__footer">
+                Footer
+              </footer>
+          
+            </article>
+       
+            
+          </section>
             
         </main>
-        <footer class="bg-warning text-center">
+        <footer id="footer" class="bg-warning text-center">
           <!-- Grid container -->
           <div class="container p-4 pb-0">
             <!-- Section: Social media -->
@@ -163,6 +183,22 @@
           <!-- Copyright -->
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script>    const hamburger = document.querySelector(".hamburger");
+          const navLinks = document.querySelector(".nav-links");
+          const links = document.querySelectorAll(".nav-links li");
+      
+      hamburger.addEventListener('click', ()=>{
+         //Animate Links
+          navLinks.classList.toggle("open");
+          links.forEach(link => {
+              link.classList.toggle("fade");
+          });
+      
+          //Hamburger Animation
+          hamburger.classList.toggle("toggle");
+      });
+      </script>
+        
 
      </body>
      </html>
