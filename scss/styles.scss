@@ -12,7 +12,8 @@ body {
   text-align: center;
   background-color: #131313e5;
   color: rgb(255, 208, 0);
-}
+  overflow-x: hidden;
+  }
 
 header {
 
@@ -165,10 +166,6 @@ input[type=text], select {
 
 .slideshow-container img {
   width: 100%;
-}
-
-body{
-  overflow-x: hidden;
 }
 nav{
   height: 6rem;
@@ -580,4 +577,8 @@ margin: 0;
   .left-box {
     display: none;
   }
+}
+
+.carousel-item {
+  background-color: transparent;
 }
