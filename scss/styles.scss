@@ -16,7 +16,13 @@ body {
   }
 
 
-  /*Form*/
+  /*Formulario*/
+  @mixin botones-form 
+  {
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
 
 h1 {
@@ -24,16 +30,14 @@ h1 {
 }
 
 label {
-    color: #333;
+@include botones-form;
 }
 
 .enviar {
-    font-weight: 600;
-    text-transform: uppercase;
+  @include botones-form;
     letter-spacing: 0.2em;
     width: 80%;
     margin-left: 3px;
-    color: #000;
     }
 
     input[type=submit] {
@@ -86,7 +90,7 @@ nav{
   color: rgb(255, 208, 0) ;
 }
 .nav-links li a:hover {
-  color: #61DAFB;
+  color: rgb(255, 208, 0);
 }
 .nav-links li {
   position: relative;
@@ -96,7 +100,7 @@ nav{
   display: block;
   height: 3px;
   width: 0%;
-  background-color: #61DAFB;
+  background-color: rgb(255, 208, 0);
   position: absolute;
   transition: all ease-in-out 250ms;
   margin: 0 0 0 10%;
@@ -113,6 +117,7 @@ nav{
   margin-left: 2vw;
   font-size: 1rem;
   cursor: pointer;
+  @include botones-form;
 
 }
 .login-button:hover {
@@ -123,8 +128,8 @@ nav{
 }
 .join-button{
   color: #131418;
-  background-color: #61DAFB;
-  border: 1.5px solid #61DAFB;
+  background-color: rgb(255, 208, 0);
+  border: 1.5px solid rgb(255, 208, 0);
   border-radius: 2em;
   padding: 0.6rem 0.8rem;
   font-size: 1rem;
@@ -334,19 +339,16 @@ nav{
   font-weight: 500;
 }
 
-/* Hidding the entire so anything we put in will only show on hover */
 
 .cardHoverText {
   visibility: hidden;
 }
 
-/* Hover affects */
 
 .card1:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Using className + hover followed by child element allows you to change child elements when parent is hovered */
 
 .card1:hover .cardHoverText {
   visibility: visible;
@@ -387,8 +389,10 @@ nav{
 }
 
 button[type=submit]:hover {
-  background-color: black;
+  background-color: rgba(255, 208, 0, 0.589);
 }
+
+/* Configuracion Boxes del index */
 
 .main {
   display: table-row;
@@ -453,6 +457,8 @@ padding: 5px 1px;
   display: table;
 }
 
+/* Carousel */
+
 .carousel-slide{
 position: relative;
 list-style: none;
@@ -484,6 +490,8 @@ margin: 0;
   justify-content: space-evenly;
 }
 
+
+/* SVGs tarjetas */
 .leaf {
  width: 8%;
  filter:  invert(76%) sepia(5%) saturate(3418%) hue-rotate(71deg) brightness(118%) contrast(87%);
@@ -503,3 +511,121 @@ margin: 0;
   width: 6%;
   filter:  invert(100%) sepia(50%) saturate(574%) hue-rotate(348deg) brightness(104%) contrast(100%);
  }
+
+
+/* LOGIN */
+/* Usuario y Contraseña*/
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(255, 208, 0);
+  box-sizing: border-box;
+}
+
+/* Estilo botones*/
+.mod-button {
+  background-color: rgb(255, 208, 0);
+  color: black;
+  border: none;
+  cursor: pointer;
+  width: 75%;
+  @include botones-form;
+}
+
+/* Hover */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Boton Volver */
+.cancelbtn {
+  width: 50%;
+  background-color: rgb(255, 208, 0);
+  @include botones-form;
+}
+
+/* Imagen Modal*/
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  
+}
+
+/* Avatar imagen */
+img.avatar {
+  width: 50%;
+
+}
+
+/* Padding contenedor */
+.container {
+  padding: 16px;
+}
+
+/* Ajuste en pantallas pequeñas */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+      }
+}
+
+/* Estilo Modal*/
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 10%;
+  top: 0;
+  width: 75%;
+  height: 75%; 
+  overflow: auto; 
+  background-color: transparent;
+  padding-top: 30px;
+}
+
+/* Contenido Modal */
+.modal-content {
+  background-color: rgba(19, 19, 19, 0.8980392157);
+  margin: 5px auto; 
+  border: 1px solid rgb(255, 208, 0);
+  width: 50%; 
+}
+
+/* Boton para cerrar modal*/
+.close {
+  position: absolute;
+  right: 22%;
+  top: 0;
+  color: rgb(255, 208, 0);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Hover boton cerrar*/
+.close:hover,
+.close:focus {
+  color: rgba(255, 208, 0, 0.589);
+  cursor: pointer;
+}
+
+/* Animacion al abrir */
+.animate {
+  -webkit-animation: animazoom 0.6s;
+  animation: animazoom 0.6s
+}
+
+@-webkit-keyframes animazoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animazoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}

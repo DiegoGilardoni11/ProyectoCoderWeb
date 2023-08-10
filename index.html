@@ -24,8 +24,40 @@
                   <li><img src="./multimedia/SVG/3.svg" alt="" style="width: 5%;"><a href="../index.html">Inicio</a></li>
                   <li><img src="./multimedia/SVG/3.svg" alt="" style="width: 4%;"><a href="./pages/tipo_pokemones.html">Tipo de Pokémones</a></li>
                   <li><img src="./multimedia/SVG/3.svg" alt="" style="width: 5%;"><a href="./pages/unite.html">Unirse</a></li>
-                  <li><button class="login-button" href="#">Login</button></li>
+                  <li><button class="login-button" onclick="document.getElementById('id01').style.display='block'" href="#">Login</button></li>
               </ul>
+                        <!-- Modal -->
+                        <div id="id01" class="modal">
+                            <div class="close">
+                                <span onclick="document.getElementById('id01').style.display='none'"
+                                class="close" title="Close Modal">&times;</span>
+                            </div>
+
+                        <!-- Contenido Modal -->
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                            <img src="./multimedia/IMG/Pokemon Master.png" alt="Avatar" class="avatar">
+                            </div>
+
+                            <div class="container">
+                            <label for="uname" style="color: rgb(255, 208, 0);"><b>Nombre de Usuario</b></label>
+                            <input type="text" placeholder="Usuario" name="uname" required>
+
+                            <label for="psw"style="color: rgb(255, 208, 0);" ><b>Contraseña</b></label>
+                            <input type="password" placeholder="Contraseña" name="psw" required>
+
+                            <button class="mod-button" type="submit">Login</button>
+                            </div>
+                                <label style="color: rgb(255, 208, 0);" >
+                                <input type="checkbox" checked="checked" name="Recordar" > Recordarme
+                            </label>
+
+                            <div class="container">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Volver</button>                         
+                            </div>
+                            <span class="psw"><a href="#"> Olvidaste Tu Contraseña?</a></span>
+                        </form>
+                        </div>
           </nav> 
       </header>    
 
@@ -316,14 +348,26 @@
   const links = document.querySelectorAll(".nav-links li");
 
 hamburger.addEventListener('click', ()=>{
- //Animate Links
+ //Animacion Links
   navLinks.classList.toggle("open");
   links.forEach(link => {
       link.classList.toggle("fade");
   });
 
-  //Hamburger Animation
+  //Hamburger Animacion
   hamburger.classList.toggle("toggle");
 });
 </script>
+<script>
+    // Modal
+    var modal = document.getElementById('id01');
+    
+    // Cerrar al clickear afuera del modal
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
 </html>
